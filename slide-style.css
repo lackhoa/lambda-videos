@@ -1,0 +1,38 @@
+body {background: #e8e856;
+      font-size: 35px;
+      font-family: "sans-serif";
+      color: #380f04;}
+
+/* Kinda weird that "height" and "width" should be specified like this */
+.rows {display: flex;
+       flex-direction: column;
+       justify-content:center;
+       align-items:center;}
+/* General row: grow and shrink, take full width */
+.rows > :not(p):not(h1) {flex: 1 1 0;
+                         min-height: 0;
+                         width: 100%;}
+/* Paragraph as a row: just fit to content */
+.rows > (p, h1) {flex: 0 1 auto;
+                 width: auto;
+                 margin: 0;}
+.cols {display: flex;
+       justify-content:center;
+       align-items:center;}
+/* General column: grow and shrink, take full height */
+.cols > :not(p, h1) {flex: 1 1 0;
+                     min-width: 0;
+                     height: 100%;}
+/* Paragraph as a row: just fit to content */
+.cols > p, h1 {flex: 0 1 auto;
+               height: auto;
+               margin: 0;}
+
+/* Image get full size of its container, and image CONTENT is the same as that */
+img {padding: 1px;
+     width: 100%;
+     height: 100%;
+     object-fit: contain;}
+
+section {border-bottom: solid;
+         height: 100vh;}

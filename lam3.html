@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="slide-style.css">
+    <title>Lambda Calculus 3</title>
+  </head>
+
+  <body>
+    <section class="rows">
+      <h1>Lambda Calculus 3</h1>
+      <h1>Pairs and Numbers</h1>
+    </section>
+
+    <section class="rows">Let's start with the usual rambling...</section>
+
+<section class="rows">
+  <p>When we think of something, we often focus on what it <strong>is</strong>.<br>∙ Especially, on what it <b>looks</b> like.</p>
+  <p>But the more important thing is how it <strong>interacts</strong> with the rest of the system.</p>
+</section>
+
+<section class="rows">
+  <p>How do think of a <strong>dog</strong>?</p>
+  <img src="data/lam3/plain-dog.png"></img>
+</section>
+
+<section class="rows">
+  <p>Is this a <strong>dog</strong>?</p>
+  <img src="data/lam3/playful-dog.png">
+</section>
+
+<section class="rows">
+  <p>Which is a better representation of <strong>money</strong></p>
+  <div class="cols">
+    <img src="data/lam3/cash.png">
+    <img src="data/lam3/credit-card.png">
+  </div>
+  <p>The right question is: does it matter what the physical shape of money is?</p>
+</section>
+
+<section class="rows">
+  <p>Back on topic, let us return to the <strong>Boolean</strong> system.</p>
+</section>
+
+<section class="rows">
+  <p>What <b>is</b> this function?</p>
+  <img src="data/branching/true.png">
+  <p>It takes two argument and returns the fisrt one ➾ So what?</p>
+</section>
+
+<section class="rows">
+  <p>How about this function?</p>
+  <img src="data/cherry.jpg">
+  <p>It takes 3 things, and apply the first to the remaining two ➾ So what?</p>
+</section>
+
+<section class="rows">
+  <p>How about these three functions <strong>altogether</strong>?</p>
+  <div class="cols">
+    <div class="rows">
+      <img src="data/cherry.jpg">
+      <p>if</p>
+    </div>
+    <div class="rows">
+      <div class="rows">
+        <img src="data/branching/true.png">
+        <p>true</p>
+      </div>
+      <div class="rows">
+        <img src="data/branching/false.png">
+        <p>false</p>
+      </div>
+    </div>
+  </div>
+  <p>Now it makes sense: the first one represents a <strong>binary choice</strong>.<br>∙ The latter two represents <strong>the two possible choices</strong>.</p>
+</section>
+
+<section class="rows">
+  <p><strong>Ordered Pairs</strong></p>
+</section>
+
+<section class="rows">
+  <p>An <strong>(ordered) pair</strong> is a composite of two elements</p>
+  <p>
+    We want a system of pairs, which are:<br>
+    ∙ How to <strong>form</strong> a pair, and<br>
+    ∙ How to <strong>read</strong> a pair
+  </p>
+  <p><em>Reading</em> a pair means to get its <strong>first</strong> and <strong>second</strong> element</p>
+</section>
+
+<section class="rows">
+  <p>Here's one way to do it:</p>
+  <div class="cols">
+    <div class="rows">
+      <img src="data/cherry.jpg"></img>
+      <p>pair</p>
+    </div>
+
+    <div class="rows">
+      <div class="rows">
+        <img src="data/cherry.jpg"></img>
+        <p>fst</p>
+      </div>
+      <div class="rows">
+        <img src="data/cherry.jpg"></img>
+        <p>snd</p>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
+
+<!-- Nested rows doesn't work!!! -->
