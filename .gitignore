@@ -1,1 +1,4 @@
 data/
+.sass-cache/
+*.css
+*.css.map
